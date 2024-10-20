@@ -1,0 +1,47 @@
+section {
+  min-height: 100vh;
+  width: 90%;
+  max-width: 90%;
+  margin-inline: auto;
+  padding: 1em;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  place-items: center;
+  column-gap: 3rem;
+  row-gap: 4.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.card_content h2 {
+  width: 200px;
+  font-size: 1.2rem;
+  color: white;
+  margin: 0.25em 0;
+}
+
+span { 
+    color : white;
+    font-size: 1rem;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    padding: 1.2em;
+    color: rgb(239, 232, 232);
+    
+}
+
+button {
+  padding: .5em ;
+  background: #2b2a2a;
+  color: white;
+}

@@ -1,0 +1,124 @@
+main {
+  max-height: calc(100vh - 80px);
+  width: 100%;
+}
+
+.left {
+  width: 60%;
+}
+
+.right {
+  width: 40%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: .7;
+}
+
+.movie-details {
+  width: 90%;
+  height: 60%;
+  margin-inline: auto;
+  margin-top: 1em;
+  background: linear-gradient(to right, #000000, #0c0c0c, #363434);
+  color: aliceblue;
+  border-radius: 10px;
+  padding: 1em;
+  display: flex;
+}
+
+.movie-poster {
+  color: white;
+  display: flex;
+  gap: 0.5em;
+}
+
+.info {
+  font-size: 18px;
+}
+
+/* .info p {
+  margin: 0.7em 0;
+} */
+
+.info .rating {
+  color: lightskyblue;
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+.info .gener {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 16px;
+  color: rgb(142, 162, 215);
+  margin: 16px 0;
+}
+
+.genres {
+  display: flex;
+}
+
+.info  span {
+  display: inline;
+  border: 1px solid rgb(133, 125, 125);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.relase {
+  font-size: 16px;
+  color: white;
+  margin-top: 20px;
+}
+
+.overview h3 {
+  margin: 0.3em 0;
+  font-size: 1.5em;
+}
+
+.overview p {
+  color: rgb(224, 222, 222);
+  padding: 2px;
+}
+
+.cast {
+  display: flex;
+  overflow-x: auto;
+  gap: 1em;
+  padding: .5em;
+}
+
+/* Custom scrollbar styles */
+.cast::-webkit-scrollbar {
+  width: 5px; 
+  height: 5px; 
+}
+
+.cast::-webkit-scrollbar-thumb {
+  background-color: #6c6868; 
+  border-radius: 10px; 
+}
+
+.cast::-webkit-scrollbar-thumb:hover {
+  background-color: #1f1e1e; 
+}
+
+.cast::-webkit-scrollbar-track {
+  background: none; 
+}
+
+.credits{
+  color: white;
+  padding: .5em;
+}
+
+@media (max-width: 600px) {
+  .right {
+    display: none;
+  }
+  .left { 
+    width: 100%;
+  }
+}
